@@ -22,6 +22,8 @@
       href="https://fonts.googleapis.com/css?family=Lato|Oxanium|Roboto&display=swap"
       rel="stylesheet"
     />
+    <!--Merriweather-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700,700i&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="../stylesheet/style.css" />
 
@@ -29,11 +31,81 @@
     <link rel="icon" href="../utils/icons/w3.ico" type="image/ico" />
   </head>
   <body>
-    <section id="Header"></section>
-    <section id="AboutUs"></section>
+    <section id="Header">
+      <!--Heading-->
+          <h1 class="main-heading">
+              Webarch
+            </h1>
+            <p>
+              We know the industry, we know the game, and we're here to help your goal move forward.
+            </p>
+            <img src="../utils/icons/w3.ico" alt="logo">
+           
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+            </div>
+             
+          
+        
+      
+    
+
+
+
+
+      <!--Sidebar-->
+    </section>
+    <!-- <section id="AboutUs"></section>
     <section id="Service"></section>
     <section id="Client"></section>
     <section id="Contact"></section>
-    <section id="Footer"></section>
+    <section id="Footer"></section> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+
+    <script>
+        let tl = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 750
+        });
+        tl.add({
+            targets: '.animateDiv',
+            width: '100%',
+            backgroundColor: '#00bdaa',
+            delay: anime.stagger(100)
+        })
+        tl.add({
+            targets: '.animateDiv',
+            width: '100%',
+            backgroundColor: '#0f4c75',
+        })
+        tl.add({
+            targets: '.main-heading',
+            top: '20%',
+            opacity: '1'
+        })
+        tl.add({
+            targets: 'p',
+            top: '37%',
+            opacity: '1',
+            delay: anime.stagger(100)
+        })
+        tl.add({
+          targets: 'img',
+          top: '25%',
+          opacity: '1',
+          delay: anime.stagger(50)
+        })
+    </script>
+
+
   </body>
 </html>
