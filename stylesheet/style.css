@@ -3,6 +3,55 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+nav {
+  background-color: teal;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar ul li a {
+  color: rgb(47, 236, 236);
+  padding: 0.5rem;
+  margin: 0 0.4rem;
+  border-bottom: 2px transparent solid;
+  font-size: small;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  border-color: gold;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
 
 /* header */
 
