@@ -407,15 +407,10 @@
 }
 
 
-
+ /*About & Services*/
 @media only screen and (max-width:600px){
     body{
         overflow-X:hidden;
-    }
-    
-
-    .wrapper{
-        margin-left: 0;
     }
     .service_box{
         margin: 0 0 30px;
@@ -425,20 +420,11 @@
     .navbar ul{
         margin-left: -2.4rem;
     }
-    
-}
-
- 
-  /*About & Services*/
-  @media screen and (max-width: 600px) {
       #About{
-          min-height: 170vh;
+          min-height: 180vh;
           background-color: black;
       }
-      #About p{
-          font-size: 35px;
-          
-      }
+      
      .Container .box{
          margin:10px 55px;
          width: 280px;
