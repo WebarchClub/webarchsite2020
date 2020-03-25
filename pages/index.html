@@ -26,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700,700i&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="../stylesheet/style.css" />
+
     <title>Webarch - Architects of the Web</title>
     <link rel="icon" href="../utils/icons/w3.ico" type="image/ico" />
   </head>
@@ -50,11 +51,121 @@
         </defs>
       </svg>
     </section>
-    <section id="Header"></section>
-    <section id="AboutUs"></section>
+
+    <section id="Navbar">
+      <!-- navbar -->
+    <nav style="opacity: 0; position: absolute;" class="bg-transparent">
+      <div class="container">
+        <div class="navbar">
+          <img src="../utils/icons/logo.png" alt="logo" id="logo" />
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#client">Client</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </section>
+
+
+    <section id="Home">
+      <!--Heading-->
+          <h1 class="main-heading">
+              Webarch
+            </h1>
+            <p>
+              We know the industry, we know the game, and we're here to help your goal move forward.
+            </p>
+            <img src="../utils/icons/logo.png" alt="logo" class="logo">
+           
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+              <div class="animateDiv"></div>
+            </div>
+      <!--Sidebar-->
+      <section class="showcase">
+        <div class="social-icons">
+          <div class="icon">
+            <a href="https://www.instagram.com/webarchclub/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <div class="line"></div>
+          </div>
+          <div class="icon">
+            <a href="https://github.com/WebarchClub/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <div class="line"></div>
+          </div>
+          <div class="icon">
+            <a href="https://www.linkedin.com/company/WebarchClub/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          </div>
+        </div>
+      </section>
+    </section>
+    
+    <!-- social icon and background -->
+    </section>
+    <section id="About"></section>
     <section id="Service"></section>
     <section id="Client"></section>
     <section id="Contact"></section>
-    <section id="Footer"></section>
+    <section id="Footer"></section> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+
+    <script>
+        let tl = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 750
+        });
+        tl.add({
+            targets: '.animateDiv',
+            width: '100%',
+            backgroundColor: '#00bdaa',
+            delay: anime.stagger(100)
+        })
+        tl.add({
+            targets: '.animateDiv',
+            width: '100%',
+            backgroundColor: '#0f4c75',
+        })
+        tl.add({
+          targets: '.logo',
+          top: '23%',
+          opacity: '1',
+          duration: '400',
+          delay: anime.stagger(50)
+        })
+        tl.add({
+            targets: '.main-heading',
+            top: '20%',
+            opacity: '1',
+            duration: '400'
+        })
+        tl.add({
+            targets: 'p',
+            top: '37%',
+            opacity: '1',
+            delay: anime.stagger(100)
+        })
+        tl.add({
+          targets: "nav",
+          opacity: '1',
+        })
+        tl.add({
+          targets: ".social-icons",
+          opacity: '1',
+        })
+    </script>
+
+
   </body>
 </html>
