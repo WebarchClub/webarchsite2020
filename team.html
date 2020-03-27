@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Oxanium|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!--Ubuntu-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="team.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Webarch - Architects of the Web</title>
+    <link rel="icon" href="icons/w3.ico" type="image/ico" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <section id="Navbar">
+      <nav id="nav">
+        <div class="container" id="container">
+          <div class="navbar">
+            <img src="icons/logo.png" alt="WEBARCH" id="logo" />
+            <button class="hamburger" id="hamburger">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-ul" id="nav-ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Team">Team</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Team -->
+    <section id="Team">
+      <div class="container py-5">
+        <div class="team-heading mt-3">
+          <h2>OUR TEAM</h2>
+        </div>
+        <div class="Team-content py-5">
+          <!-- Team-Members -->
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section
+      id="Testimonials"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="200"
+    >
+      <div class="container py-5">
+        <div class="heading pb-3">
+          <h2>SOME WORDS FROM OUR SENIOR'S</h2>
+        </div>
+        <div class="testimonial-content">
+          <!-- testimonial1 -->
+
+          <div
+            class="testimonial mt-4 mb-4 p-3"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+          >
+            <div class="img item1 p-2">
+              <img src="images/testimonial/rohan.jpg" />
+            </div>
+            <div class="content item2">
+              <p class="text-secondary">
+                <span>&#8220;</span> Webarch is an excellent place where I was
+                able to cultivate my technical skills to have me ready for the
+                future <span>&#8221;</span>
+              </p>
+              <p class="author">Rohan Ananad (Batch-2018)</p>
+            </div>
+          </div>
+
+          <!-- testimonial2 -->
+          <div
+            class="testimonial mb-4 p-3"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+          >
+            <div class="img item1 p-2">
+              <img
+                src="/images/testimonial/ayus.jpg"
+                style="transform: rotate(-90deg);"
+              />
+            </div>
+            <div class="content item2 p-1">
+              <p class="text-secondary">
+                <span>&#8220;</span>I would say that webarch has been the place
+                for lickstarting my career. I have worked in three to four
+                different field overwll but even today I always say that I
+                started my career as a graphic designer A truly wonderful
+                personal and professional experience. One place which motivates
+                the members to learn technical skills in their areas of interest
+                and practice their knowledge in full profession<span
+                  >&#8221;
+                </span>
+              </p>
+              <p class="author">Aayush chaurasia (Batch-2017)</p>
+            </div>
+          </div>
+          <!-- testimonial3 -->
+          <div
+            class="testimonial mb-4 p-3"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+          >
+            <div class="img item1 p-2">
+              <img src="images/testimonial/anshul.jpeg" />
+            </div>
+            <div class="content item2 p-1">
+              <p class="text-secondary">
+                <span>&#8220;</span>The lessons learnt and teachings taken from
+                Webarch is something which one cannot forget for his whole life
+                no matter how far the person will go, once a Webarchian, always
+                a Webarchian. Experience @ webarch was something like chennai's
+                weather, stressful days were like chennai's hot and humid
+                daytime, but those were always followed by blisfull times of
+                accomplishments just like evening breeze which will flow
+                everyday, no matter what. Being a webarch member was like icing
+                on the cake, where cake was life in SRM, how much ever top
+                creamy layer might seem unimportant but cake will always be
+                incomplete without icing
+                <span>&#8221;</span>
+              </p>
+              <p class="author">Anshul Sahni (Batch-2016)</p>
+            </div>
+          </div>
+          <!-- testimonial4 -->
+          <div
+            class="testimonial mt-4 p-3"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+          >
+            <div class="img item1 p-2">
+              <img src="images/testimonial/mohit.jpg" />
+            </div>
+            <div class="content item2">
+              <p class="text-secondary">
+                <span>&#8220;</span> The only work place in SRM where you can
+                become passionate about being a team player. Here you'll learn
+                life if you put attention to the club. You'll be guided by the
+                best brains and at some point in time you shall too pass on the
+                knowledge. And that will be a pretty journey :)
+                <span>&#8221;</span>
+              </p>
+              <p class="author">Mohit Gupta (Batch-2019)</p>
+            </div>
+          </div>
+          <!-- testimonial5 -->
+          <div
+            class="testimonial mt-4 p-3"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+          >
+            <div class="img item1 p-2">
+              <img src="images/testimonial/tanay.jpg" />
+            </div>
+            <div class="content item2">
+              <p class="text-secondary">
+                <span>&#8220;</span> Full Stack Developer na(MEAN/MERN Stack),
+                App Developer, App Dev Lead
+                <span>&#8221;</span>
+              </p>
+              <p class="author">Tanay Toshniwal (Batch-2020)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section
+      id="Contact"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="200"
+    >
+      <div class="container py-5">
+        <div class="row">
+          <!-- col-1 -->
+          <!-- form -->
+          <div class="col-md-6 col-12 mb-3 py-5 ping">
+            <div class="contact-items">
+              <div class="contact-heading">
+                <h4>PING US</h4>
+              </div>
+              <form
+                action="mailto:Hr.webarch@gmail.com"
+                method="post"
+                enctype="text/plain"
+              >
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Name"
+                    aria-describedby="name"
+                    placeholder="NAME"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="Mail"
+                    aria-describedby="email"
+                    placeholder="EMAIL"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="Message"
+                    rows="2"
+                    placeholder="TYPE SOMETHING NICE"
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-secondary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- col-2 -->
+          <div class="col-md-6 sol-12 mt-5 container ping">
+            <div class="row id-contact">
+              <!-- logo -->
+              <div class="col-6 pr-5 text-center contact-2">
+                <div class="contact-items">
+                  <img src="logo.png" id="contact-logo" />
+                </div>
+                <div class="mt-2">
+                  <p>Webarch - Architect Of The Web</p>
+                  <p>SRMIST,KTR CHENNAI-603203</p>
+                </div>
+              </div>
+              <!-- contact -->
+              <div class="col-6 mt-4 contact-us">
+                <h4>CONTACT</h4>
+                <div class="contact-items mt-4" id="contact-3">
+                  <ul class="contact-link">
+                    <li>
+                      <i class="fas fa-phone"></i
+                      ><span class="pl-2"
+                        ><a href="tel:+91 9909902419">+91 9909902419</a></span
+                      >
+                    </li>
+                    <li>
+                      <i class="far fa-envelope-open"></i>
+                      <span class="pl-1"
+                        ><a href="mailto:contactwebarch@gmail.com" class="mail"
+                          >contactwebarch</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                  <ul class="contact-icon">
+                    <li class="icon">
+                      <a
+                        href="https://www.instagram.com/webarchclub/"
+                        target="_blank"
+                        ><i class="fab fa-instagram fa-2x"></i
+                      ></a>
+                    </li>
+                    <li class="icon">
+                      <a href="https://github.com/WebarchClub/" target="_blank"
+                        ><i class="fab fa-github fa-2x"></i
+                      ></a>
+                    </li>
+                    <li class="icon">
+                      <a
+                        href="https://www.linkedin.com/company/WebarchClub/"
+                        target="_blank"
+                        ><i class="fab fa-linkedin fa-2x"></i
+                      ></a>
+                    </li>
+                    <li class="icon">
+                      <a
+                        href="https://www.facebook.com/webarchclub/"
+                        target="_blank"
+                        ><i class="fab fa-facebook fa-2x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section id="Footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            © Developed With <i class="fas fa-heart"></i> By Team Webarch | 2020
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="team.js"></script>
+  </body>
+</html>

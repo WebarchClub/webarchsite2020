@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Karla&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Karla|Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Dosis|Karla|Lobster&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+#Navbar {
+  height: 10vh;
+}
+#nav {
+  background-color: #0f4c75;
+}
+#Team {
+  display: block;
+  background-color: #0f4c75;
+}
+.team-heading {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.team-heading h2 {
+  display: inline-block;
+  border-bottom: 2px solid gold;
+}
+.Team-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+.Team-members {
+  background-color: rgb(238, 255, 238);
+  border-radius: 5%;
+  font-family: "Baloo Thambi 2", cursive;
+  box-shadow: -1px -1px 10px rgb(7, 99, 99);
+}
+.Image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Image img {
+  height: 100x;
+  width: 100px;
+  border-radius: 100%;
+  transition: all 1s ease-in-out;
+}
+.Image img:hover {
+  transform: scale(1.1);
+}
+.role {
+  font-size: 0.9rem;
+  color: rgb(0, 48, 70);
+}
+.Social-Icon {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+.Social-Icon i {
+  color: rgb(128, 46, 60);
+}
+
+@media screen and (max-width: 900px) {
+  .Team-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .Team-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
