@@ -47,7 +47,9 @@ a {
   background-color: rgb(238, 255, 238);
   border-radius: 5%;
   font-family: "Baloo Thambi 2", cursive;
-  box-shadow: -1px -1px 10px rgb(7, 99, 99);
+}
+.shadow {
+  box-shadow: -5px -5px 10px rgb(6, 53, 53);
 }
 .Image {
   display: flex;

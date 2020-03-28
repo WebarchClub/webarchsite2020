@@ -16,6 +16,7 @@ firebase.analytics();
 const db = firebase.firestore();
 
 db.collection("team")
+  .orderBy("order")
   .get()
   .then(snap => {
     snap.docs.forEach(doc => {
@@ -29,7 +30,7 @@ db.collection("team")
       };
 
       var div1 = document.createElement("div");
-      div1.className = "Team-members py-5";
+      div1.className = "Team-members py-5 shadow";
       div1.innerHTML = `<div class="Team-members py-2">
       <div class="Image py-2">
         <img src="${person.photo}" />
@@ -67,5 +68,3 @@ db.collection("team")
       document.querySelector(".Team-content").appendChild(div1);
     });
   });
-
-console.log("hi");
