@@ -736,6 +736,9 @@ Testimonials */
   }
 
   /* client */
+  .carousel-indicators {
+    display: none;
+  }
 
   /* testimonial */
   #Testimonials .container {
