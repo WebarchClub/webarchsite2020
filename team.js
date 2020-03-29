@@ -68,3 +68,18 @@ db.collection("team")
       document.querySelector(".Team-content").appendChild(div1);
     });
   });
+
+// form
+const form = document.querySelector("#ping");
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+  const message = document.querySelector("#message").value;
+  db.collection("contact").add({
+    email: email,
+    message: message,
+    name: name
+  });
+  alert("Webarch has received your message");
+});

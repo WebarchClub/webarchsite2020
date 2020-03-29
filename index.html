@@ -27,6 +27,11 @@
       href="https://fonts.googleapis.com/css?family=Ubuntu:700,700i&display=swap"
       rel="stylesheet"
     />
+     <!-- firebase -->
+    
+     <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -418,7 +423,7 @@
               <div class="contact-heading">
                 <h4>PING US</h4>
               </div>
-              <form action="mailto:Hr.webarch@gmail.com" method="post" enctype="text/plain">
+              <form id="ping">
                 <div class="form-group">
                   <input
                     type="text"
@@ -426,6 +431,8 @@
                     name="Name"
                     aria-describedby="name"
                     placeholder="NAME"
+                    id="name"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -435,6 +442,8 @@
                     name="Mail"
                     aria-describedby="email"
                     placeholder="EMAIL"
+                    id="email"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -443,12 +452,13 @@
                     name="Message"
                     rows="2"
                     placeholder="TYPE SOMETHING NICE"
+                    id="message"
+                    required
                   ></textarea>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-secondary">
-                    SEND MESSAGE
-                  </button>
+                  <input type="submit" class="btn btn-secondary">
+                  </input>
                 </div>
               </form>
             </div>
@@ -535,5 +545,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
