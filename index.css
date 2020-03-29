@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Karla&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Karla|Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Dosis|Karla|Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap");
 
 * {
   padding: 0;
@@ -105,9 +106,7 @@ section {
   font-size: 1rem;
   text-align: center;
   display: inline-block;
-  font-family: "Baloo Thambi 2", cursive;
-  font-family: "Karla", sans-serif;
-  font-family: "Lobster", cursive;
+  font-family: "Baloo Da 2", cursive;
 }
 
 .seprate-line {
